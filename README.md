@@ -19,7 +19,7 @@ Make sure Postgres is installed on your system:
 
 or
 
-[Postgres](https://www.postgresql.org/download/) for Windows (not recommended), Linux, macOS, however some configuration may be required.
+[Postgres](https://www.postgresql.org/download/) for Windows, Linux, macOS, however some configuration may be required.
 
 Note: other database (examples: sqlite and MySQL) are possible but will require some modification of code  (this has not been tested)
 
