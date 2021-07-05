@@ -4,9 +4,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import NavBarContainer from './nav/navbar_container';
 import MainPageContainer from './main/main_page_container';
-// import UserProfile from './profile/user_profile_container';
 import TweetForm from './tweets/tweet_form_container';
-// import PostShow from './posts/post_show_container';
 import TweetFeedContainer from './tweets/tweet_feed_container';
 
 import userLoggedIn from './test/test';

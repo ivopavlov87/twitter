@@ -4,13 +4,13 @@ class User < ApplicationRecord
   
   attr_reader :password
 
-  # check make sure username, name, email, password_digest, and session_token are present
+  # check make sure username, password_digest, and session_token are present
   validates :username, :password_digest, :session_token, presence: true
 
-  # check to make sure username and email have not been registered
+  # check to make sure username has not been registered
   validates :username, uniqueness: { case_sensitive: false }
 
-  # check to make sure username is at least 6 chars, and at most 30, and is only allowed chars
+  # check to make sure username is at least 4 chars, and at most 30, and is only allowed chars
   # valid_username is custom validation method
   validates :username, length: { minimum: 4, maximum: 30 }, valid_username: true
 
